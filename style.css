@@ -35,7 +35,7 @@ button {
   background-position: center;
   background-repeat: no-repeat;
   background-size: 30px;
-  transition: all 0.3s ease-in-out;
+  transition: scale 0.3s ease-in-out;
 }
 button:hover {
   transform: scale(1.1);
