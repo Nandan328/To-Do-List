@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="head-container">
+        <input
+          type="text"
+          placeholder="Add a new task"
+          id="input"
+          onkeydown="if(event.key==='Enter') Add()"
+        />
+        <div class="btn-container">
+          <button
+            id="reset"
+            onclick="Reset()"
+            style="background-image: url(./assets/circular.png)"
+          ></button>
+          <button
+            id="add"
+            onclick="Add()"
+            style="background-image: url(./assets/plus.png)"
+          ></button>
+        </div>
+      </div>
+      <div class="body-container containerr" id="list"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

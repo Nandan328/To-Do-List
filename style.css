@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(222, 222, 222);
+}
+.container {
+  margin: 10px;
+  width: 600px;
+  padding: 15px;
+  background-color: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+}
+.head-container {
+  margin: 10px 0px 10px 0px;
+  width: 550px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+button {
+  padding: 20px;
+  margin: 3px;
+  border: none;
+  border-radius: 50px;
+  background-color: inherit;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 30px;
+  transition: all 0.3s ease-in-out;
+}
+button:hover {
+  transform: scale(1.1);
+}
+.body-container {
+  background-color: rgb(222, 222, 222);
+  border-radius: 10px;
+}
+#input {
+  width: 550px;
+  height: 80px;
+  font-size: 30px;
+  text-align: center;
+  background: none;
+  background-color: rgb(222, 222, 222);
+  border-radius: 50px;
+  margin: 30px;
+}
+#input:focus {
+  outline: none;
+}
+.task {
+  width: 550px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 25px;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+#text {
+  font-size: 30px;
+  background: none;
+  border: none;
+  cursor: default;
+  color: black;
+  cursor: inherit;
+}
+#text:focus {
+  outline: none;
+}
+
+.draggable {
+  cursor: grab;
+}
